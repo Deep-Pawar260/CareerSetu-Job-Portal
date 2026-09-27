@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a35"/><stop offset=".6" stop-color="#0d3b52"/><stop offset="1" stop-color="#f08a24"/></linearGradient><linearGradient id="o" x1="0" x2="1"><stop stop-color="#ffb347"/><stop offset="1" stop-color="#ff7a18"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#g)"/><circle cx="1280" cy="190" r="260" fill="#fff" opacity=".06"/><circle cx="1450" cy="500" r="360" fill="#fff" opacity=".04"/>
+<path d="M0 700 Q400 560 800 690 T1600 610 V900H0Z" fill="#061326" opacity=".55"/>
+<g fill="#dfe9f3" opacity=".85"><rect x="980" y="380" width="80" height="260" rx="6"/><rect x="1070" y="300" width="100" height="340" rx="6"/><rect x="1180" y="410" width="75" height="230" rx="6"/><rect x="1270" y="340" width="120" height="300" rx="6"/><rect x="1410" y="430" width="90" height="210" rx="6"/></g>
+<g fill="#ffb347"><circle cx="1020" cy="420" r="7"/><circle cx="1110" cy="350" r="7"/><circle cx="1218" cy="450" r="7"/><circle cx="1310" cy="390" r="7"/><circle cx="1450" cy="470" r="7"/></g>
+<g transform="translate(930 450)"><circle cx="100" cy="70" r="45" fill="#9b5b3a"/><path d="M55 65 Q100 15 145 65" fill="#171b25"/><path d="M40 150 Q100 95 160 150 L185 300 H15Z" fill="#0e7490"/><path d="M70 125 L105 210 L140 125" fill="#fff" opacity=".9"/><path d="M78 205 L55 330 M122 205 L145 330" stroke="#172033" stroke-width="28" stroke-linecap="round"/><path d="M25 165 L-55 250 M175 165 L250 230" stroke="#9b5b3a" stroke-width="25" stroke-linecap="round"/></g>
+<g transform="translate(1210 500)"><circle cx="90" cy="55" r="42" fill="#7a432d"/><path d="M50 50 Q90 10 130 50" fill="#241a18"/><path d="M30 135 Q90 90 150 135 L170 290 H10Z" fill="#f08a24"/><path d="M70 125 L90 210 L115 125" fill="#fff"/><path d="M70 200 L50 315 M115 200 L135 315" stroke="#24324a" stroke-width="27" stroke-linecap="round"/><path d="M25 155 L-40 235 M155 155 L220 220" stroke="#7a432d" stroke-width="23" stroke-linecap="round"/></g>
+<g fill="#fff" opacity=".12"><path d="M850 120h250v12H850z"/><path d="M850 145h180v8H850z"/></g>
+</svg>

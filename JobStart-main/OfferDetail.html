@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Details</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/offer_detail.css" />
+    <!-- Site logo / favicon -->
+    <link
+      rel="icon"
+      href="assets/logo/careersetulogo.svg"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="assets/logo/careersetulogo.svg" />
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- dark mode -->
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <script type="text/javascript" src="data/offers.js" defer></script>
+    <script type="text/javascript" src="js/applications.js" defer></script>
+    <script type="text/javascript" src="js/session.js" defer></script>
+    <script type="text/javascript" src="js/popup.js" defer></script>
+    <link rel="stylesheet" href="css/india-theme.css" />
+</head>
+  <body>
+    <!-- Page loader -->
+    <div id="site-loader" aria-hidden="false">
+      <div class="loader-container">
+        <div class="logo-wrapper">
+          <img
+            src="assets/logo/careersetulogo.svg"
+            alt="CareerSetu Logo"
+            class="logo-image"
+          />
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+
+        <h1 class="brand-text">
+          <span class="job">Career</span><span class="start">Setu</span>
+        </h1>
+
+        <p class="loading-text">Loading your opportunities...</p>
+      </div>
+    </div>
+    <!-- End Page loader -->
+    <!-- Start header -->
+    <header>
+      <div class="container">
+        <a href="index.html"
+          ><img src="assets/logo/careersetulogo.svg" alt="CareerSetu" id="logo"
+        /></a>
+        <nav>
+          <button class="dropdown-menu" aria-label="Menu" aria-expanded="false">
+            <span class="bar"></span><span class="bar"></span
+            ><span class="bar"></span>
+          </button>
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Offers.html">Jobs</a></li>
+            <li><a href="Conseils.html">Career Advice</a></li>
+            <li><a href="Apropos.html">About CareerSetu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="mobile-action"><a href="login.html">Login</a></li>
+            <li class="mobile-action"><a href="SignUp.html">Sign Up</a></li>
+          </ul>
+          <div class="header-btns">
+            <button type="button"><a href="login.html">Login</a></button>
+            <button type="button"><a href="SignUp.html">Sign Up</a></button>
+          </div>
+          <button id="theme-switch" title="Toggle theme">🌙</button>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- Start offers details -->
+
+    <main class="container offer-detail-container" aria-live="polite">
+      <div id="detail-loading" class="detail-loading" aria-hidden="true">
+        <div
+          class="spinner"
+          role="status"
+          aria-label="Loading job details"
+        ></div>
+      </div>
+      <div class="detail-header" id="detail-header" data-aos="fade-down">
+        <!-- Filled by JS -->
+      </div>
+      <div class="detail-two-column">
+        <div
+          class="detail-section"
+          id="detail-description"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h2>Description du poste</h2>
+          <p id="desc-text"></p>
+        </div>
+        <div
+          class="detail-section"
+          id="detail-resp"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <h2>Key Responsibilities</h2>
+          <ul class="bullet-list" id="resp-list"></ul>
+        </div>
+      </div>
+      <div
+        class="detail-section"
+        id="detail-skills"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h2>Skills & Experience</h2>
+        <ul class="bullet-list" id="skills-list"></ul>
+      </div>
+      <div
+        class="detail-section"
+        id="detail-overview"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <h2>Job Overview</h2>
+        <div class="overview-grid" id="overview-grid"></div>
+        <div class="map-box" id="map-box"></div>
+      </div>
+    </main>
+    <!-- end offers details -->
+    <!-- Start fooetr -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img
+                src="assets/logo/careersetulogo.svg"
+                alt="CareerSetu"
+                id="logo"
+              />
+            </a>
+            <div class="contact-info">
+              <div class="contact-item"><strong>Contact Us</strong></div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="contact-text">
+                  <div class="phone">+91 20 4100 2026</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-text">Pune, Maharashtra<br /></div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-text">hello@careersetu.in</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>For Job Seekers</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Internships</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Jobs</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Mon Profile</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>My Applications</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Job Alerts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>For Employers</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Post a Job</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Employer Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Indian Candidates</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Employer Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>About Us</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Our Mission</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Our Team</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Testimonials</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Useful Resources</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Resume & CV Tips</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Interview Preparation</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Career Guide</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Legal Information</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">© 2026 CareerSetu India. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end fooetr -->
+
+    <!--AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/offer_detail.js"></script>
+    <script src="js/loading.js" defer></script>
+    <script src="data/forms.data.js" defer></script>
+    <script src="js/applications.js" defer></script>
+    <script src="js/session.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

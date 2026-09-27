@@ -1,0 +1,119 @@
+@import url('header.css');
+@import url('scrollbar.css');
+@import url('loader.css');
+@import url('footer.css');
+@import url('conseils.css');
+/* Start CSS Variables */
+:root {
+    --primary-color: #f97316;
+    --success-color: #14b8a6;
+    --secondary-color: #fb923c;
+    --base-color: white;
+    --base-variant: rgb(228, 234, 245);
+    --text-color: #172033;
+    --secondary-text: #334155;
+    --input-bg: #ffffff;
+    --input-border: #ddd;
+    /* text colors */
+    --white: white;
+    --black: #000000;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --box-shadow-card: 0 20px 60px rgba(30, 144, 255, 0.12);
+    --transition-card: all 0.3s ease;
+    /* gradient colors */
+    --text-gradient-primary: linear-gradient(90deg, #f97316, #fb923c);
+    --text-gradient-success: linear-gradient(90deg, #14b8a6, #f97316);
+    --text-gradient-secondary: linear-gradient(90deg, #fb923c, #f97316);
+    --text-gradient-dark-to-blue: linear-gradient(90deg, #172033, #f97316);
+    --text-gradient-soft: linear-gradient(90deg, #172033, #fb923c);
+    --search-box-shadow: 0 20px 60px rgba(11,20,40,0.06);
+    --transition-card: all 0.3s ease;
+
+  }
+
+/* start theme mode */
+.darkmode {
+    --primary-color: #f97316;
+    --success-color: #14b8a6;
+    --secondary-color: #fb923c;
+    --base-color: #0b1220;
+    --base-variant: #111827;
+    --text-color: #ffffff;
+    --secondary-text: #94a3b8;
+    --card-bg: #111827;
+    --input-bg: #0f172a;
+    --input-border: #444444;
+    --border-color: #263244;
+    --card-bg: #0b1220;
+    --box-shadow-card:  0 20px 60px rgba(30, 144, 255, 0.12);;
+    --transition-card: all 0.3s ease;
+
+}
+
+#theme-switch {
+    background: rgba(255, 255, 255, 0.2) !important;
+    padding: 0.5rem !important;
+    border: 1px solid var(--base-variant);
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-switch:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+
+}
+
+/* end theme mode */
+
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background: var(--base-color);
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* End Global Rules */
+
+/* Hide header / kebab / three-dot controls when site enters fullscreen
+   The `.full-screen-mode` class is toggled by JS (covers F11 and Fullscreen API).
+   Use several selectors to cover FontAwesome icons, SVG dots and buttons labeled "menu". */
+.full-screen-mode .mobile-filter-toggle,
+.full-screen-mode .dropdown-menu,
+.full-screen-mode .fa-ellipsis,
+.full-screen-mode .fa-ellipsis-h,
+.full-screen-mode .fa-ellipsis-v,
+.full-screen-mode .fa-ellipsis-vertical,
+.full-screen-mode button[aria-label*="menu"],
+.full-screen-mode button[title*="menu"],
+.full-screen-mode .mobile-filter-toggle svg,
+.full-screen-mode .mobile-filter-toggle * {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+
+

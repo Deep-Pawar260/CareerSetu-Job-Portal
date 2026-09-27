@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Job - CareerSetu</title>
+    <!-- Styling File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form-recruteur.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <!-- Site logo / favicon -->
+    <link
+      rel="icon"
+      href="assets/logo/careersetulogo.svg"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="assets/logo/careersetulogo.svg" />
+    <!-- AOS library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- dark mode -->
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <link rel="stylesheet" href="css/india-theme.css" />
+</head>
+  <body>
+    <!-- Page loader -->
+    <div id="site-loader" aria-hidden="false">
+      <div class="loader-container">
+        <div class="logo-wrapper">
+          <img
+            src="assets/logo/careersetulogo.svg"
+            alt="CareerSetu Logo"
+            class="logo-image"
+          />
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <h1 class="brand-text">
+          <span class="job">Career</span><span class="start">Setu</span>
+        </h1>
+        <p class="loading-text">Loading your opportunities...</p>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="assets/logo/careersetulogo.svg" alt="CareerSetu" id="logo" />
+        </a>
+        <nav>
+          <button
+            class="dropdown-menu"
+            aria-label="Drop down menu"
+            title="Drop down menu"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Offers.html">Offers</a></li>
+            <li><a href="Conseils.html">Career Advice</a></li>
+            <li><a href="Apropos.html">About CareerSetu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button id="theme-switch">🌙</button>
+          <div class="header-btns">
+            <button type="button">
+              <a href="login.html">Login</a>
+            </button>
+            <button type="button">
+              <a href="SignUp.html">Sign Up</a>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <main>
+      <div class="container-form" data-aos="fade-up">
+        <div class="header">
+          <h1 id="formTitle">Create a New Job</h1>
+          <p id="formSubtitle">
+            Fill in the details below to publish your job opening
+            jobs
+          </p>
+        </div>
+
+        <form id="offerForm" class="form-recruteur">
+          <!-- Job Title Section -->
+          <div class="form-section">
+            <div class="section-header">
+              <h2>Informations du poste</h2>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Job Title <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="jobTitle"
+                  name="jobTitle"
+                  placeholder="Ex: Developer Full-Stack"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Job Type <span class="required">*</span></label>
+                <select id="jobType" name="jobType" required>
+                  <option value="">Select</option>
+                  <option value="Full Time">Full Time</option>
+                  <option value="Part Time">Part Time</option>
+                  <option value="Internship">Internship</option>
+                  <option value="Freelance">Freelance</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Category <span class="required">*</span></label>
+                <select id="category" name="category" required>
+                  <option value="">Select</option>
+                  <option value="Development">Development</option>
+                  <option value="IT">IT</option>
+                  <option value="Data">Data</option>
+                  <option value="Design">Design</option>
+                  <option value="Marketing">Marketing</option>
+                  <option value="RH">Ressources Humaines</option>
+                  <option value="Finance">Finance</option>
+                  <option value="Management">Management</option>
+                  <option value="Communication">Communication</option>
+                  <option value="Commercial">Commercial</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Urgent</label>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="urgent" name="urgent" />
+                  <span>Marquer comme urgent</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location & Salary Section -->
+          <div class="form-section">
+            <div class="section-header">
+              <h2>Location & Salary</h2>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Location <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  placeholder="Ex: Pune, Maharashtra"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Salary <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="salary"
+                  name="salary"
+                  placeholder="Ex: 15 000 - 20 000 INR"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Details Section -->
+          <div class="form-section">
+            <div class="section-header">
+              <h2>Details du poste</h2>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Description <span class="required">*</span></label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="5"
+                  placeholder="Describe the role, responsibilities and expectations..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Years of Experience</label>
+                <input
+                  type="number"
+                  id="experienceYears"
+                  name="experienceYears"
+                  min="0"
+                  placeholder="Ex: 2"
+                />
+              </div>
+              <div class="form-group">
+                <label>Career Level</label>
+                <select id="careerLevel" name="careerLevel">
+                  <option value="">Select</option>
+                  <option value="Junior">Junior</option>
+                  <option value="Mid-level">Mid-level</option>
+                  <option value="Senior">Senior</option>
+                  <option value="Intern">Intern</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Qualification</label>
+                <input
+                  type="text"
+                  id="qualification"
+                  name="qualification"
+                  placeholder="Ex: B.E./B.Tech or equivalent"
+                />
+              </div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select id="gender" name="gender">
+                  <option value="Any">Any</option>
+                  <option value="Homme">Homme</option>
+                  <option value="Femme">Femme</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Responsibilities Section -->
+          <div class="form-section">
+            <div class="section-header">
+              <h2>Responsibilities</h2>
+            </div>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label>Responsibilities (one per line)</label>
+                <textarea
+                  id="responsibilities"
+                  name="responsibilities"
+                  rows="6"
+                  placeholder="Example:&#10;Build responsive web applications&#10;Participate in code reviews&#10;Collaborate with the development team"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Section -->
+          <div class="form-section">
+            <div class="section-header">
+              <h2>Required Skills</h2>
+            </div>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label>Skills (comma separated)</label>
+                <input
+                  type="text"
+                  id="skills"
+                  name="skills"
+                  placeholder="Ex: React, Node.js, MongoDB, Docker"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Buttons -->
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn-cancel"
+              onclick="window.location.href='Offers.html'"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              Publish Job
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img
+                src="assets/logo/careersetulogo.svg"
+                alt="CareerSetu"
+                id="logo"
+              />
+            </a>
+            <div class="contact-info">
+              <div class="contact-item">
+                <strong>Contact Us</strong>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="contact-text">
+                  <div class="phone">+91 20 4100 2026</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-text">Pune, Maharashtra<br /></div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-text">hello@careersetu.in</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>For Job Seekers</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Internships</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Jobs</a
+                >
+              </li>
+              <li>
+                <a href="profile.html"
+                  ><i class="fas fa-chevron-right"></i>Mon Profile</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>My Applications</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Job Alerts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>For Employers</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Post a Job</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Employer Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Indian Candidates</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Employer Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>About Us</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Our Mission</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Our Team</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Testimonials</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Useful Resources</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Resume & CV Tips</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Interview Preparation</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Career Guide</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Legal Information</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            © 2026 CareerSetu India. All rights
+            reserved.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="data/offers.js" defer></script>
+    <script src="js/loading.js" defer></script>
+    <script src="js/session.js" defer></script>
+    <script src="js/create-offer.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const jobTypeSelect = document.getElementById("jobType");
+        const categorySelect = document.getElementById("category");
+
+        // Populate job type options dynamically
+        const jobTypes = ["Full Time", "Part Time", "Internship", "Freelance"];
+        jobTypeSelect.innerHTML =
+          '<option value="">Select</option>' +
+          jobTypes
+            .map((type) => `<option value="${type}">${type}</option>`)
+            .join("");
+
+        // Populate category options dynamically
+        const categories = [
+          "Development",
+          "IT",
+          "Data",
+          "Design",
+          "Marketing",
+          "RH",
+          "Finance",
+          "Management",
+          "Communication",
+          "Commercial",
+        ];
+        categorySelect.innerHTML =
+          '<option value="">Select</option>' +
+          categories
+            .map(
+              (category) => `<option value="${category}">${category}</option>`
+            )
+            .join("");
+      });
+    </script>
+  </body>
+</html>

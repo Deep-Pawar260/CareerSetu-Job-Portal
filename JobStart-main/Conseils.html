@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerSetu - Career Advice India</title>
+    <!-- Styling File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Site logo / favicon -->
+    <link
+      rel="icon"
+      href="assets/logo/careersetulogo.svg"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="assets/logo/careersetulogo.svg" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- dark mode -->
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <link rel="stylesheet" href="css/india-theme.css" />
+</head>
+  <body>
+    <!-- Page loader -->
+    <div id="site-loader" aria-hidden="false">
+      <div class="loader-container">
+        <div class="logo-wrapper">
+          <img
+            src="assets/logo/careersetulogo.svg"
+            alt="CareerSetu Logo"
+            class="logo-image"
+          />
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+
+        <h1 class="brand-text">
+          <span class="job">Career</span><span class="start">Setu</span>
+        </h1>
+
+        <p class="loading-text">Loading your opportunities...</p>
+      </div>
+    </div>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- theme -->
+        <a href="index.html">
+          <img src="assets/logo/careersetulogo.svg" alt="CareerSetu" id="logo" />
+        </a>
+
+        <nav>
+          <!-- Dropdown menu button -->
+          <button
+            class="dropdown-menu"
+            aria-label="Drop down menu"
+            title="Drop down menu"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Offers.html">Jobs</a></li>
+            <li><a href="Conseils.html">Career Advice</a></li>
+            <li><a href="Apropos.html">About CareerSetu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="mobile-action"><a href="login.html">Login</a></li>
+            <li class="mobile-action"><a href="SignUp.html">Sign Up</a></li>
+          </ul>
+          <div class="header-btns">
+            <button type="button"><a href="login.html">Login</a></button>
+            <button type="button"><a href="SignUp.html">Sign Up</a></button>
+          </div>
+          <button id="theme-switch" title="Toggle theme">🌙</button>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main>
+      <section class="conseils-hero">
+        <div class="container">
+          <h1 data-aos="fade-up">Career Advice for Indian Job Seekers</h1>
+          <p data-aos="fade-up" data-aos-delay="80">
+            Improve your applications with practical resume, interview and career resources for India.
+            Build stronger applications and prepare confidently for interviews in India.
+          </p>
+          <div class="hero-actions" data-aos="zoom-in" data-aos-delay="140">
+            <a class="btn btn-primary" href="#articles"
+              ><i class="fa-solid fa-newspaper"></i> Articles</a
+            >
+            <a class="btn" href="#videos"
+              ><i class="fa-solid fa-video"></i> Videos</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="articles" class="conseils-section">
+        <div class="container">
+          <h2>Useful Career Articles</h2>
+          <div class="resource-grid">
+            <article class="resource-card" data-aos="fade-up">
+              <div class="rc-icon"><i class="fa-solid fa-file-lines"></i></div>
+              <h3>Write an Effective Resume</h3>
+              <p>
+                Resume structure, ATS keywords, measurable achievements and common mistakes to avoid
+                for a strong Indian job application.
+              </p>
+              <div class="tags">
+                <span class="tag">CV</span>
+                <span class="tag">ATS</span>
+                <span class="tag">Freshers & Experienced</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://europa.eu/europass/fr/create-europass-cv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Voir
+                  le guide</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="resource-card"
+              data-aos="fade-up"
+              data-aos-delay="60"
+            >
+              <div class="rc-icon">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
+              <h3>Write a Strong Cover Letter</h3>
+              <p>
+                Opening statement, value proposition, formatting et job-specific customization
+                to stand out to Indian recruiters.
+              </p>
+              <div class="tags">
+                <span class="tag">Cover Letter</span>
+                <span class="tag">Storytelling</span>
+                <span class="tag">Personnalisation</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.india.gov.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Bonnes
+                  pratiques</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="resource-card"
+              data-aos="fade-up"
+              data-aos-delay="120"
+            >
+              <div class="rc-icon"><i class="fa-solid fa-how tos"></i></div>
+              <h3>Ace Your Interview</h3>
+              <p>
+                Prepare your answers, ask thoughtful questions and manage the
+                stress le day J.
+              </p>
+              <div class="tags">
+                <span class="tag">Interview</span>
+                <span class="tag">STAR</span>
+                <span class="tag">Soft skills</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/results?search_query=STAR+method+interview+India+Hindi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-magnifying-glass"></i> STAR Method</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="resource-card"
+              data-aos="fade-up"
+              data-aos-delay="180"
+            >
+              <div class="rc-icon"><i class="fa-solid fa-id-badge"></i></div>
+              <h3>Optimize Your LinkedIn Profile</h3>
+              <p>
+                Headline, summary, achievements and recommendations to attract
+                recruteurs.
+              </p>
+              <div class="tags">
+                <span class="tag">LinkedIn</span>
+                <span class="tag">Personal branding</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/results?search_query=optimize+linkedin+profile+india+2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-magnifying-glass"></i> Bonnes
+                  pratiques</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="resource-card"
+              data-aos="fade-up"
+              data-aos-delay="240"
+            >
+              <div class="rc-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3>Portfolio & Projects</h3>
+              <p>
+                Select, describe and present your projects to showcase your
+                skills.
+              </p>
+              <div class="tags">
+                <span class="tag">Portfolio</span>
+                <span class="tag">Projects</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/results?search_query=how to+faire+un+portfolio+professionnel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-magnifying-glass"></i> Examples</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="resource-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="rc-icon">
+                <i class="fa-solid fa-circle-question"></i>
+              </div>
+              <h3>Frequently Asked Questions (FAQ)</h3>
+              <p>
+                Availability, salary expectations, career gaps and challenges—prepare
+                clear and credible answers.
+              </p>
+              <div class="tags">
+                <span class="tag">FAQ</span>
+                <span class="tag">Salary</span>
+                <span class="tag">Availability</span>
+              </div>
+              <div class="actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/results?search_query=Indian+job+interview+questions+Hindi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-solid fa-magnifying-glass"></i> Practice Now</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" class="conseils-section">
+        <div class="container">
+          <h2>Recommended Videos</h2>
+          <div class="video-grid">
+            <div class="video-card" data-aos="fade-up">
+              <h3>Create a Fresher Resume in Hindi</h3>
+              <p>
+                Understand the expected structure, ATS keywords and effective
+                formatting.
+              </p>
+              <div class="video-actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/watch?v=9cXF3l2sUhk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-youtube"></i> Watch on YouTube</a
+                >
+              </div>
+            </div>
+            <div class="video-card" data-aos="fade-up" data-aos-delay="80">
+              <h3>Cover Letter for Indian Freshers</h3>
+              <p>Learn how to write a short cover letter for Indian IT and fresher job applications.</p>
+              <div class="video-actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/results?search_query=cover+letter+for+freshers+India+Hindi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-youtube"></i> Watch on YouTube</a
+                >
+              </div>
+            </div>
+            <div class="video-card" data-aos="fade-up" data-aos-delay="120">
+              <h3>Frontend Interview Questions in Hindi</h3>
+              <p>Practice HTML, CSS, JavaScript and React questions commonly discussed in frontend interviews.</p>
+              <div class="video-actions">
+                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=uYrfh-t9hKE" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> Watch on YouTube</a>
+              </div>
+            </div>
+            <div class="video-card" data-aos="fade-up" data-aos-delay="160">
+              <h3>Frontend Interview Preparation</h3>
+              <p>Prepare for HTML, CSS, JavaScript and React interviews with practical Indian fresher interview questions.</p>
+              <div class="video-actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.youtube.com/watch?v=uYrfh-t9hKE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-youtube"></i> Watch on YouTube</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="conseils-cta" data-aos="fade-up">
+        <div class="container">
+          <div class="cta-box">
+            <div class="cta-text">
+              <h3>Need help with your resume?</h3>
+              <p>Send us a message and our team will respond shortly.</p>
+            </div>
+            <a class="btn btn-primary" href="contact.html"
+              ><i class="fa-regular fa-paper-plane"></i> Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img
+                src="assets/logo/careersetulogo.svg"
+                alt="CareerSetu"
+                id="logo"
+              />
+            </a>
+            <div class="contact-info">
+              <div class="contact-item">
+                <strong>Contact Us</strong>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="contact-text">
+                  <div class="phone">+91 20 4100 2026</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-text">Pune, Maharashtra<br /></div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-text">hello@careersetu.in</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>For Job Seekers</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Internships</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Jobs</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Mon Profile</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>My Applications</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Job Alerts</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>For Employers</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Post a Job</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Employer Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Find Indian Candidates</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Employer Services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>About Us</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Our Mission</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Our Team</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Testimonials</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Useful Resources</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i>Resume & CV Tips</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Interview Preparation</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Career Guide</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Legal Information</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i>Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">© 2026 CareerSetu India. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!--AOS library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="data/forms.data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/session.js"></script>
+    <script src="js/loading.js"></script>
+  </body>
+</html>
